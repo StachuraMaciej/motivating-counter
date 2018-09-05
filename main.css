@@ -1,0 +1,257 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(Sunset.jpg);
+    background-size: cover;
+    color: white;
+}
+
+
+
+.intro {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    display: table;
+    top: 0;
+}
+
+.intro .inner {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    max-width: none;
+}
+
+.content {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.content h1 {
+    margin-left: -15px;
+    font-size: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-family: Lucida Calligraphy;
+}
+
+
+.countDownClock {
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    text-align: center;
+    padding: 12px;
+    background-color: #000;
+    opacity: 0.7;
+    border: 2px #fff;
+    border-radius: 8px;
+}
+
+.result {
+
+    font-family: Garamond;
+    font-size: 90px;
+    color: white;
+
+}
+
+.info {
+
+    font-family: Garamond;
+    font-size: 28px;
+    color: white;
+
+}
+
+#date {
+    border-color: black;
+    border-width: thin;
+    opacity: 0.9;
+    border-style: outset;
+    width: 140px;
+
+}
+
+.sendDate {
+    font-size: 14px;
+    background: none;
+    color: black;
+    cursor: pointer;
+    border: solid #000 2px;
+    border-radius: 5px;
+    padding: 6px 8px;
+    margin-left: 10px;
+    opacity: 0.8;
+}
+
+.sendDate:hover {
+
+    border: solid #fff 2px;
+    color: white;
+}
+
+#field {
+    font-size: 17px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+td {
+
+    padding: 0px 9px 0px 6px;
+    width: 100px;
+}
+
+
+
+
+
+
+/*MEDIA QUERY*/
+
+
+
+
+
+@media only screen and (max-width: 1024px) {
+    .content h1 {
+        margin-top: 70px;
+        font-size: 45px;
+    }
+    a {
+        font-size: 30px;
+    }
+
+    .sendDate {
+        margin-top: 20px;
+        font-size: 29px;
+        padding: 6px 6px;
+    }
+    .countDownClock {
+        transform: translate(-50%, -90%);
+    }
+    td {
+        width: 30px;
+    }
+    #field {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #date {
+        margin-top: 10px;
+        width: 50%;
+        height: 30px;
+        font-size: 24px;
+    }
+
+
+    .result {
+        font-size: 110px;
+    }
+    .info {
+        font-size: 38px;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 680px) {
+    .content h1 {
+        margin-top: 25px;
+        font-size: 26px;
+    }
+    a {
+        margin-top: 20px;
+        font-size: 18px;
+    }
+    .sendDate {
+        margin-top: 50px;
+        font-size: 16px;
+        padding: 6px 6px;
+
+    }
+    .countDownClock {
+        transform: translate(-50%, -90%);
+    }
+    td {
+        width: 30px;
+        padding: 0px 10px 0px 0px;
+    }
+    #field {
+        top: 28%
+    }
+    #date {
+        margin-top: 10px;
+        font-size: 14px;
+        height: 18px;
+        width: 80%;
+    }
+    .result {
+        font-size: 44px;
+    }
+    .info {
+        font-size: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 360px) {
+    .content h1 {
+        margin-top: 25px;
+        font-size: 26px;
+    }
+    a {
+        margin-top: 20px;
+        font-size: 16px;
+
+    }
+    .sendDate {
+        margin-top: 50px;
+        font-size: 16px;
+        padding: 6px 6px;
+
+    }
+    .countDownClock {
+        transform: translate(-50%, -90%);
+
+    }
+    td {
+        width: 30px;
+        padding: 0px 10px 0px 0px;
+    }
+    #field {
+        top: 28%
+    }
+    #date {
+        margin-top: 10px;
+        font-size: 14px;
+        height: 18px;
+        width: 80%;
+
+    }
+    .result {
+        font-size: 36px;
+    }
+    .info {
+        font-size: 20px;
+    }
+}
